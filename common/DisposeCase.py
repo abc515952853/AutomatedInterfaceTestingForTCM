@@ -37,7 +37,8 @@ class DisposeCase:
             for i in range(len(case_payload_rely)):
                 # case_payload[case_payload_rely[i]] = self.get_rely_json(case_payload_relyed[i])
                 # print(case_payload,case_payload_rely[i],self.get_rely_json(case_payload_relyed[i]))
-                self.set_case_payload(case_payload,case_payload_rely[i],self.get_rely_json(case_payload_relyed[i]))
+                case_payload = self.set_case_payload(case_payload,case_payload_rely[i],self.get_rely_json(case_payload_relyed[i]))
+        print(case_payload)
         return case_payload
 
     #获取依赖json值
@@ -52,10 +53,24 @@ class DisposeCase:
                 case_payload[c] = get_rely_json
             else:
                 if type(case_payload[c]) is list:
-                
-                elif type(case_payload[c]) is list:
-
-
+                    for i in range(len(case_payload[c])):
+                        if type(case_payload[c][i]) is dict:
+                            for cc in case_payload[c][i].keys():
+                                if cc == case_payload_rely:
+                                    case_payload[c][i][cc] = get_rely_json
+                        elif type(case_payload[c][i]) is list:
+                            pass
+                elif type(case_payload[c]) is dict:
+                    for cc in case_payload[c].keys():
+                        if cc == case_payload_rely:
+                            case_payload[c][cc] = get_rely_json
+                        elif type(case_payload[c][cc]) is list:
+                            for i in range(len(case_payload[c][cc])):
+                                if type(case_payload[c][cc][i]) == dict:
+                                    print(case_payload[c][cc][i])
+                                elif type(case_payload[c][cc][i]) == list:
+                                    pass
+        return case_payload
 
 
 
