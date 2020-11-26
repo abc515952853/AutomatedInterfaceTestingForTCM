@@ -1,0 +1,28 @@
+assertEqual(a,b,msg)                                    a等于b，通过 
+assertNotEqual(a,b,msg)                                 a不等于b，通过 
+assertTrue(x,msg)                                       x为真，通过
+assertFalse(x,msg)                                      x为假，通过
+assertIs(a,b,msg)                                       a是b，通过
+assertIsNot(a, b,msg)                                   a不是b，通过
+assertIsNone(x,msg)                                     x为none，通过
+assertIsNotNone(x,msg)                                  x不为none，通过
+assertIn(a,b,msg)                                       a在b中，通过
+assertNotIn(a,b,msg)                                    a不在b中，通过
+assertIsInstance(a,b,msg)                               a是b的实例，通过
+assertNotIsInstance(a,b,msg)                            a不是b的实例，通过
+assertAlmostEqual(a,b,msg=None,delta=None)              验证a约等于b。 palces: 指定精确到小数点后多少位，默认为7，如果delta指定了值，则a和b之间的差值必须≤delta
+assertNotAlmostEqual(a,b,msg=None,delta=None)           验证a不约等于b。 palces: 指定精确到小数点后多少位，默认为7，如果delta指定了值，则a和b之间的差值必须≤delta
+assertGreater(first,second,msg=None)                    验证first > second，否则fail
+assertGreaterEqual(first,second,msg=None)               验证first ≥ second，否则fail
+assertLess(a,b,msg=None)                                验证first < second，否则fail
+assertLessEqual(a,b,msg=None)                           验证first ≤ second，否则fail
+assertRegexpMatches(s,re)                               验证正则表达式regexp搜索匹配的文本text。 regexp：通常使用re.search()
+assertNotRegexpMatches(s,re)                            验证正则表达式regexp搜索不匹配的文本text。 regexp：通常使用re.search()
+assertItemsEqual(a,b)
+assertDictContainsSubset(a,b)
+assertMultiLineEqual(a,b)                               2个多行字符串是相等的
+assertSequenceEqual(a,b)                                有序序列的相等断言 (like lists and tuples).
+assertListEqual(a,b)                                    验证a和b为同一个列表['111','222','333']
+assertTupleEqual(a,b)                                   验证a和b为同一个元组(1, 2, 3, 4, 5 )
+assertSetEqual(a,b)                                     2个集合是相等的
+assertDictEqual(a,b)                                    验证a和b为同一个字典{"a":1,,"b":2}

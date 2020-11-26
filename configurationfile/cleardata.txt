@@ -1,0 +1,11 @@
+DELETE FROM counter;
+DELETE FROM customer;
+DELETE FROM daily_customer;
+DELETE FROM doctor;
+DELETE FROM doctor_hospital;
+DELETE FROM hospital;
+DELETE FROM hospital_customer;
+DELETE FROM `order`;
+DELETE FROM order_line;
+DELETE FROM weixin;
+DELETE FROM qianjifang_tcm_identity.aspnetusers where UserName != 'admin'

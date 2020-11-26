@@ -1,0 +1,50 @@
+{
+    "case_common_001":{
+        "name": "千济方中医馆",
+        "level": "中医馆",
+        "tags": "千济方",
+        "province": "浙江省",
+        "city": "杭州市",
+        "county": "上城区",
+        "address": "山南印4B-206",
+        "logo": "tcm/test/hospital/logo/00ae5b158f8e4082a2a0ea9ecf2bfc40.png",
+        "cover": "tcm/test/hospital/logo/171180d809b54eb0afa1db81700c443b.jpg",
+        "summary": "我是一个中医馆介绍",
+        "phone": "17767154545",
+        "remark": "我是一个备注"
+    },
+    "case_common_002":{
+        "phone":"18057190364",
+        "username":"18057190364",
+        "PassWord":"123456"
+    },
+    "case_common_003":{
+        "hospitalId": 21,
+        "userId": "48e918b7-edf4-4a8c-9244-ff4b664d9127",
+        "name": "千济方专柜",
+        "phone": "18057190364",
+        "location": "隐秘的角落~",
+        "remark": ""
+    },
+    "case_common_004":{
+        "name": "千济方医生",
+        "phone": "18057190364",
+        "avatar": "tcm/test/doctor/93a65624ea5c48ea90098d80a3b72d74.jpg",
+        "idCard": "330102198909283001",
+        "certificate": "tcm/test/doctor/291480692da14c2fa4e7f57ccd192207.jpg",
+        "title": "主任医师",
+        "expertise": "我是一个擅长方向",
+        "vitae": "string",
+        "summary": "我是一个个人简介",
+        "tags": "千济方",
+        "degree": "博士",
+        "position": "中西医结合",
+        "remark": "我是一个备注",
+        "hospitals": [
+          {
+            "hospitalId": 0,
+            "departmentId": 1
+          }
+        ]
+    }
+}

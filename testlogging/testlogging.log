@@ -1,0 +1,47 @@
+
+
+2020-09-28 16:00:16 PM - DEBUG日志信息:This is a debug log.
+日志文件全路径:f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py
+日志所在行数:13
+日志接口:debuglog
+异常及栈信息:
+NoneType: None
+Stack (most recent call last):
+  File "f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py", line 26, in <module>
+    a.debuglog()
+  File "f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py", line 13, in debuglog
+    logging.debug(message,exc_info=True, stack_info=True)
+
+
+2020-09-28 16:00:16 PM - INFO日志信息:This is a infolog log.
+日志文件全路径:f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py
+日志所在行数:16
+日志接口:infolog
+异常及栈信息:
+NoneType: None
+Stack (most recent call last):
+  File "f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py", line 27, in <module>
+    a.infolog()
+  File "f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py", line 16, in infolog
+    logging.info(message,exc_info=True,stack_info=True)
+
+
+2020-09-28 16:00:16 PM - WARNING日志信息:This is a warninglog log.
+日志文件全路径:f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py
+日志所在行数:19
+日志接口:warninglog
+异常及栈信息:
+NoneType: None
+Stack (most recent call last):
+  File "f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py", line 28, in <module>
+    a.warninglog()
+  File "f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py", line 19, in warninglog
+    logging.warning(message,exc_info=True,stack_info=True)
+
+
+2020-09-28 16:00:16 PM - ERROR日志信息:This is a errorlog log.
+日志文件全路径:f:/PythonProject/AutomatedInterfaceTestingForAccompany/tools/Logging.py
+日志所在行数:22
+日志接口:errorlog
+异常及栈信息:
+NoneType: None

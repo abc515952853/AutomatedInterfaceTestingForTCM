@@ -1,0 +1,10 @@
+{
+    "caselist":[
+        {
+            "casename":"Common",
+            "api":"",
+            "skip":true,
+            "annotation":"清除数据创建测试数据"
+        }
+    ]
+}
