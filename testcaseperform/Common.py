@@ -60,17 +60,17 @@ class Common(unittest.TestCase):
             payload = self.disposecasehandle.get_payload(data)
             #获取请求类型
             method = data['请求类型']
-            # #请求接口
-            # r = self.runmethodhandle.run_main(url,method,header,payload)
-            # #断言
-            # if r.status_code == 200:
-            #     #保存依赖数据
-            #     time.sleep(2)
-            #     self.disposerelyhandle.set_rely(data,r)
-            #     pass
-            # else:
-            #     print(r.status_code,r.text)
-            #     os._exit(0)
+            #请求接口
+            r = self.runmethodhandle.run_main(url,method,header,payload)
+            #断言
+            if r.status_code == 200:
+                #保存依赖数据
+                time.sleep(2)
+                self.disposerelyhandle.set_rely(data,r)
+                pass
+            else:
+                print(r.status_code,r.text)
+                os._exit(0)
 
 
 

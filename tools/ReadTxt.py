@@ -10,7 +10,7 @@ class ReadTxt:
 
     def read_txt(self):
         try:
-            self.fb = open(self.txtPath)
+            self.fb = open(self.txtPath,encoding='utf-8')
             IsSkip.IsSkip().write_isskip('Yes')
         except Exception as ex_results:
             print("程序终止,抓了一个异常：",ex_results,)

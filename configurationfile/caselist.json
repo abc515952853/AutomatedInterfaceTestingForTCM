@@ -5,6 +5,12 @@
             "api":"",
             "skip":true,
             "annotation":"清除数据创建测试数据"
+        },
+        {
+            "casename":"CustomerRegister",
+            "api":"/api/v{version}/Customer/Register",
+            "skip":false,
+            "annotation":"客户扫码"
         }
     ]
 }

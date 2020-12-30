@@ -38,7 +38,6 @@ class DisposeCase:
                 # case_payload[case_payload_rely[i]] = self.get_rely_json(case_payload_relyed[i])
                 # print(case_payload,case_payload_rely[i],self.get_rely_json(case_payload_relyed[i]))
                 case_payload = self.set_case_payload(case_payload,case_payload_rely[i],self.get_rely_json(case_payload_relyed[i]))
-        print(case_payload)
         return case_payload
 
     #获取依赖json值

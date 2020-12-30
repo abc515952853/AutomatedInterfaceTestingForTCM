@@ -1,6 +1,6 @@
 from tools import ReadConfig,ReadJson,ReadDB,ReadRedis
 from common import FormatConversion
-import json
+import json,time
 
 class DisposeReport:
     def __init__(self,casename=None):
@@ -18,6 +18,7 @@ class DisposeReport:
 
     #获取预期结果
     def get_report(self,data):
+        time.sleep(2)
         case_report = data['预期结果']
         if case_report == '':
             return None

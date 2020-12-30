@@ -1,11 +1,8 @@
-DELETE FROM counter;
-DELETE FROM customer;
-DELETE FROM daily_customer;
-DELETE FROM doctor;
-DELETE FROM doctor_hospital;
-DELETE FROM hospital;
-DELETE FROM hospital_customer;
-DELETE FROM `order`;
-DELETE FROM order_line;
-DELETE FROM weixin;
-DELETE FROM qianjifang_tcm_identity.aspnetusers where UserName != 'admin'
+DELETE from daily_customer where customer_id= (SELECT customer_id from customer where `name` = '斌');
+DELETE from hospital_customer where customer_id= (SELECT customer_id from customer where `name` = '斌');
+DELETE from customer where `name` = '斌';
+DELETE from doctor_hospital where hospital_id = (SELECT hospital_id from hospital where phone ='17767154545');
+DELETE from hospital where phone ='17767154545';
+DELETE from counter where phone ='18057190364';
+DELETE from qianjifang_tcm_identity.aspnetusers where PhoneNumber ='18057190364';
+DELETE from doctor where phone = '18057190364';

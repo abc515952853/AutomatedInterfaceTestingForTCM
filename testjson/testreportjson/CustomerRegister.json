@@ -1,0 +1,16 @@
+{
+    "case_customerregister_001":{
+        "status_code":200,
+        "expected":{
+            "type":"ONE",
+            "sql":"SELECT a.name as nickName,a.avatar,open_id as openId,union_id as unionId,b.counter_id as counterId from customer a join daily_customer b on a.customer_id =b.customer_id where a.`name`='斌' ORDER BY b.create_time desc LIMIT 0,1"
+        }
+    },
+    "case_customerregister_002":{
+        "status_code":200,
+        "expected":{
+            "type":"ONE",
+            "sql":"SELECT a.name as nickName,a.avatar,open_id as openId,union_id as unionId from customer a join daily_customer b on a.customer_id =b.customer_id where a.`name`='斌' ORDER BY b.create_time desc LIMIT 0,1"
+        }
+    }
+}
